@@ -57,3 +57,13 @@ ul {
 button {
   cursor: pointer;
 }
+
+section {
+  padding-block: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    padding-block: 24px;
+  }
+}
