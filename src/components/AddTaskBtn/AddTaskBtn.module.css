@@ -1,0 +1,14 @@
+.addTaskBtn {
+  display: block;
+  color: var(--primary-color-white);
+  outline: transparent;
+  border: none;
+  background-color: var(--primary-color-blue);
+  border-radius: 4px;
+  transition: background-color var(--primary-transition);
+}
+
+.addTaskBtn:hover,
+.addTaskBtn:focus {
+  background-color: var(--secondary-color-blue);
+}

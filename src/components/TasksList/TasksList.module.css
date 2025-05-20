@@ -1,0 +1,10 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.listItem:not(:last-child) {
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--primary-color-gray);
+}

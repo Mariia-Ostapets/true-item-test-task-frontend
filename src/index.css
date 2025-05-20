@@ -7,6 +7,8 @@
   --primary-color-blue: #3470ff;
   --primary-color-white: #f9f9f9;
   --secondary-color-blue: #0b44cd;
+  --accent-color-green: #30b94d;
+  --accent-color-red: #e90516;
 
   /* Transition */
   --primary-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);

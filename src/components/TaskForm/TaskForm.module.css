@@ -1,0 +1,36 @@
+.form {
+  display: flex;
+  gap: 16px;
+  position: relative;
+}
+
+.field {
+  display: block;
+  background-color: var(--primary-color-white);
+  border: 1px solid var(--primary-color-gray);
+  outline: transparent;
+  border-radius: 4px;
+  padding: 8px;
+  color: var(--primary-color-black);
+  flex-grow: 1;
+  transition: border-color var(--primary-transition);
+  cursor: pointer;
+}
+
+.field:hover,
+.field:focus {
+  border-color: var(--primary-color-blue);
+}
+
+.invalid {
+  border-color: var(--accent-color-red);
+}
+
+.error {
+  position: absolute;
+  color: var(--accent-color-red);
+  font-size: 12px;
+  top: 100%;
+  left: 0;
+  padding-top: 2px;
+}
