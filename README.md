@@ -1,4 +1,4 @@
-# ![icon-logo](./public/favicon.svg) ToDo List App
+# ToDo List App
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit-brightgreen)](https://true-item-test-task-frontend.vercel.app/)
 
