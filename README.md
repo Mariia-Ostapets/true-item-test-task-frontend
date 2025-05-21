@@ -11,7 +11,7 @@ organized.
 
 ![App Preview](./public/preview.png)
 
-## 📚 Features
+## ✨ Features
 
 - ✅ Add new tasks – quickly add items to your list.
 - 🗑️ Delete tasks – remove tasks you no longer need.
@@ -38,6 +38,8 @@ organized.
 - **Live App:** 🌐 [ToDo List](https://true-item-test-task-frontend.vercel.app/)
 - **Backend API:** 🛠️
   [ToDo List API](https://true-item-test-task-backend.onrender.com/)
+- **Backend Repository:**
+  [ToDo List API](https://github.com/Mariia-Ostapets/true-item-test-task-backend)
 
 ## 📦 Setup Instructions
 
