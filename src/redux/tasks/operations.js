@@ -11,6 +11,7 @@ export const fetchTasks = createAsyncThunk(
       const response = await axios.get('/tasks');
       return response.data;
     } catch (e) {
+      toast.error(e.message);
       return thunkAPI.rejectWithValue(e.message);
     }
   }
@@ -24,6 +25,7 @@ export const addTask = createAsyncThunk(
       toast.success('Task was successfully added!');
       return response.data;
     } catch (e) {
+      toast.error(e.message);
       return thunkAPI.rejectWithValue(e.message);
     }
   }
@@ -37,6 +39,7 @@ export const deleteTask = createAsyncThunk(
       toast.success(`Task was successfully deleted!`);
       return response.data;
     } catch (e) {
+      toast.error(e.message);
       return thunkAPI.rejectWithValue(e.message);
     }
   }
@@ -52,6 +55,7 @@ export const toggleCompleted = createAsyncThunk(
       toast.success(`Task was successfully updated!`);
       return response.data;
     } catch (e) {
+      toast.error(e.message);
       return thunkAPI.rejectWithValue(e.message);
     }
   }
