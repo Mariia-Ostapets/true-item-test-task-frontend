@@ -6,9 +6,10 @@ import { MdDeleteForever } from 'react-icons/md';
 export default function Task({ task }) {
   const dispatch = useDispatch();
 
-  const handleDelete = () => dispatch(deleteTask(task.id));
+  const handleDelete = () => dispatch(deleteTask(task));
 
-  const handleToggle = () => dispatch(toggleCompleted(task));
+  const handleToggle = () =>
+    dispatch(toggleCompleted({ _id: task._id, completed: task.completed }));
 
   return (
     <div className={css.taskContainer}>

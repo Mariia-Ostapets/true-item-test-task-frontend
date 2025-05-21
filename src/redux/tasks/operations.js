@@ -2,7 +2,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
-axios.defaults.baseURL = 'https://62584f320c918296a49543e7.mockapi.io';
+axios.defaults.baseURL = 'http://localhost:3000';
 
 export const fetchTasks = createAsyncThunk(
   'tasks/fetchAll',
@@ -31,9 +31,9 @@ export const addTask = createAsyncThunk(
 
 export const deleteTask = createAsyncThunk(
   'tasks/deleteTask',
-  async (taskId, thunkAPI) => {
+  async ({ _id }, thunkAPI) => {
     try {
-      const response = await axios.delete(`/tasks/${taskId}`);
+      const response = await axios.delete(`/tasks/${_id}`);
       toast.success(`Task was successfully deleted!`);
       return response.data;
     } catch (e) {
@@ -44,11 +44,12 @@ export const deleteTask = createAsyncThunk(
 
 export const toggleCompleted = createAsyncThunk(
   'tasks/toggleCompleted',
-  async (task, thunkAPI) => {
+  async ({ completed, _id }, thunkAPI) => {
     try {
-      const response = await axios.put(`/tasks/${task.id}`, {
-        completed: !task.completed,
+      const response = await axios.patch(`/tasks/${_id}`, {
+        completed: !completed,
       });
+      toast.success(`Task was successfully updated!`);
       return response.data;
     } catch (e) {
       return thunkAPI.rejectWithValue(e.message);
