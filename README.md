@@ -1,12 +1,60 @@
-# React + Vite
+# ![icon-logo](./public/favicon.svg) ToDo List App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit-brightgreen)](https://true-item-test-task-frontend.vercel.app/)
 
-Currently, two official plugins are available:
+This ToDo List application allows users to manage their daily tasks efficiently.
+Users can add new tasks, delete existing ones, and toggle their status between
+completed and not completed. It's a simple and effective tool for staying
+organized.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🖼️ Preview
 
-## Expanding the ESLint configuration
+![App Preview](./public/preview.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📚 Features
+
+- ✅ Add new tasks – quickly add items to your list.
+- 🗑️ Delete tasks – remove tasks you no longer need.
+- 🔁 Toggle task status – mark as completed or not completed.
+- 🎯 User-friendly interface – clean and intuitive design.
+
+## 🛠️ Technologies Used
+
+- **React:** ⚛️ JavaScript library for building user interfaces.
+- **Vite:** ⚡ Next-generation frontend tooling for fast development.
+- **React Redux:** 📦 Predictable state management for React applications.
+- **Redux Persist:** 💾 Persist and rehydrate your Redux store.
+- **Axios:** 🌐 Promise-based HTTP client for making API requests.
+- **Formik:** 📋 Easy form state management.
+- **Yup:** ✅ Schema builder for value parsing and validation.
+- **react-hot-toast:** 🍞 Elegant and simple toast notifications for React.
+- **react-spinners:** ⏳ A collection of loading indicators for React.
+- **react-icons:** 🎨 Ready-to-use icon library.
+- **modern-normalize:** 🧼 Normalize browser defaults for consistent styling.
+- **Vercel:** 🚀 Deployed and hosted on [Vercel](https://vercel.com/).
+
+## 🔗 Project Resources
+
+- **Live App:** 🌐 [ToDo List](https://true-item-test-task-frontend.vercel.app/)
+- **Backend API:** 🛠️
+  [ToDo List API](https://true-item-test-task-backend.onrender.com/)
+
+## 📦 Setup Instructions
+
+1. Clone the Repository:
+   `git clone https://github.com/your-repo/true-item-test-task-frontend.git`
+
+2. Navigate to the project folder: `cd true-item-test-task-frontend`
+
+3. Install Dependencies: `npm install`
+
+4. Run the development server: `npm run dev`
+
+5. Open the app in your browser at `http://localhost:3000`
+
+## 🖋️ Author
+
+Mariia Ostapets, Fullstack developer
+
+[LinkedIn](https://www.linkedin.com/in/mariia-ostapets/) |
+[GitHub](https://github.com/Mariia-Ostapets)

@@ -8,3 +8,9 @@
   padding-bottom: 12px;
   border-bottom: 1px solid var(--primary-color-gray);
 }
+
+.noTasks {
+  text-align: center;
+  font-size: 18px;
+  color: var(--primary-color-blue);
+}

@@ -16,13 +16,17 @@ export default function TasksList() {
 
   return (
     <section>
-      <ul className={css.list}>
-        {tasks.map(task => (
-          <li className={css.listItem} key={task._id}>
-            <Task task={task} />
-          </li>
-        ))}
-      </ul>
+      {tasks.length === 0 ? (
+        <p className={css.noTasks}>No tasks added yet</p>
+      ) : (
+        <ul className={css.list}>
+          {tasks.map(task => (
+            <li className={css.listItem} key={task._id}>
+              <Task task={task} />
+            </li>
+          ))}
+        </ul>
+      )}
     </section>
   );
 }
