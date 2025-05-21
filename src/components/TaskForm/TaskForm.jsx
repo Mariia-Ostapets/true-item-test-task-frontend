@@ -4,9 +4,11 @@ import { useDispatch } from 'react-redux';
 import { addTask } from '../../redux/tasks/operations';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 import * as Yup from 'yup';
+import { useRef } from 'react';
 
 export default function TaskForm() {
   const initialValues = { text: '' };
+  const inputRef = useRef(null);
 
   const FeedbackSchema = Yup.object().shape({
     text: Yup.string().trim().required('Task is required'),
@@ -22,6 +24,7 @@ export default function TaskForm() {
 
     dispatch(addTask(newTask));
     actions.resetForm();
+    inputRef.current?.blur();
   };
 
   return (
@@ -40,6 +43,7 @@ export default function TaskForm() {
               type="text"
               name="text"
               placeholder="Enter task"
+              innerRef={inputRef}
             />
             <ErrorMessage name="text" component="div" className={css.error} />
             <AddTaskBtn />
